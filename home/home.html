@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <title>Sistema de monitoramento</title>
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      <h1>Sistema de monitoramento</h1>
+      <button><a href="../login/index.html">sair</a></button>
+    </header>
+    <main>
+      <div id="nova-entrada">
+        <img src="../assets/btn-plus.svg" alt="Botão de mais">
+        <p>Nova entrada</p>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nome de entrada</th>
+            <th>Status</th>
+            <th>Modo Alerta</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>01</td>
+            <td>porta da sala</td>
+            <td id="status">Em espera...</td>
+            <td><input type="checkbox" id="myCheckbox"></td>
+          </tr>
+          <br />
+          <tr>
+            <td>02</td>
+            <td>porta da quarto</td>
+            <td>Em espera...</td>
+            <td><input type="checkbox"></td>
+          </tr>
+        </tbody>
+      </table>
+  </div>
+  </main>
+
+  <script src="home.js"></script>
+</body>
+
+</html>
